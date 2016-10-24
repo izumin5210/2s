@@ -14,6 +14,10 @@ func createTestCli() (*CLI, *bytes.Buffer, *bytes.Buffer, *bytes.Buffer) {
 	return cli, inStream, outStream, errStream
 }
 
+func TestRun(t *testing.T) {
+	// TODO: Not yet implemented.
+}
+
 func TestRun_versionFlag(t *testing.T) {
 	cli, _, outStream, _ := createTestCli()
 	command := "2s --version"
